@@ -1,2 +1,4 @@
-# CSD360
-CSD-360 Interactive Dev With JavaScript
+# CSD 340 Web Development with HTML and CSS
+## Contributors
+* Professor Sue Sampson
+* William Silknitter
