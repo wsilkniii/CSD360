@@ -6,17 +6,33 @@ Due November 14th, 2021-->
 
 <html lang='en'>
     <head>
+        <title>William Silknitter’s CSD 360 - Module 5 Dice Roll</title>
     </head>
     <body>
         <script type = "text/javascript">
             function rollDice(){
-            document.form1.dice1.value = Math.floor((Math.random() * 6) + 1);
-            document.form1.dice2.value = Math.floor((Math.random() * 6) + 1);
-            document.form1.total.value = parseInt(document.form1.dice1.value) +
-            parseInt(document.form1.dice2.value);
-            var total = parseInt(document.form1.dice1.value) +
-            parseInt(document.form1.dice2.value);
-            switch(total){ }
+                document.form1.dice1.value = Math.floor((Math.random() * 6) + 1);
+                document.form1.dice2.value = Math.floor((Math.random() * 6) + 1);
+                document.form1.total.value = parseInt(document.form1.dice1.value) +
+                parseInt(document.form1.dice2.value);
+                var total = parseInt(document.form1.dice1.value) +
+                parseInt(document.form1.dice2.value);
+                
+                // Created switch case with correct values
+                switch(total){
+                    case 2:
+                        document.form1.total.value = 'Snake Eyes';
+                        break;
+                    case 12:
+                        document.form1.total.value = 'Box Cars';
+                        break;
+                    case 7:
+                    case 11:
+                        document.form1.total.value = 'You Win';
+                        break;
+                    default:
+                        document.form1.total.value = total;
+                }
             }
            </script>
            <form name='form1'>
